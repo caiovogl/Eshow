@@ -1,0 +1,120 @@
+:root{
+    --fundo: #c97832de;
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario{
+    margin: 0;
+}
+
+.cadastrado{
+    margin: 20px auto 30px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.botao{
+    font-size: 26px;
+}
+
+.jaconta{
+    margin-top: 75px;
+}
+
+.banda{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.swiper {
+    width: 600px;
+}
+
+.slide{
+    background-color: var(--fundo);
+    width: 500px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.slide img{
+    width: 500px;
+    height: 325px;
+}
+
+#footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.celular a{
+    margin: 10px;
+}
+
+.container{
+    width: 400px;
+}
+
+@media screen and (max-width:900px) {
+    main{
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .formulario{
+        margin-top: 50px;
+    }
+    .jaconta{
+        margin-top: 50px;
+    }
+    .formulario{
+        margin: auto;
+    }
+    .vermais{
+        margin-bottom: 50px;
+    }
+    .principal{
+        margin-bottom: 50px;
+    }
+    #footer{
+        position: initial;
+        width: unset;
+    }
+    
+    .swiper{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .swiper {
+        width: 100vw;
+    }
+    .cadastrado{
+        width: 100%;
+        border-radius: 0;
+    }
+    .cadastrado img{
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-height:810px) {
+   #footer{
+        position: initial;
+        width: unset;
+    }
+}

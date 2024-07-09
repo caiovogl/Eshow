@@ -1,0 +1,469 @@
+:root{
+    --fundo: #c97832de;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: var(--fundo);
+    box-shadow: 0px 2px 11.3px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+header nav{
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style: none;
+}
+
+.banda{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.opçoes_botao:checked~.lista-menu{
+    display: block;
+    width: auto;
+    padding: 0;
+}
+
+.lista-menu li{
+    background-color: white;
+}
+
+.lista-menu_titulo{
+    font-weight: 700;
+}
+
+.opçoes_botao{
+    display:none;
+}
+
+header div{
+    display: flex;
+    margin-right: 50px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header img{
+    height: 100px;
+}
+
+main{
+    text-align: center;
+}
+
+main h1{
+    margin: 40px;
+    font-size:35px;
+}
+
+#carrossel{
+    margin-top: 140px;
+}
+
+.bloco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    margin: auto;
+}
+
+.container{
+    margin-bottom: 40px;
+    background-color: var(--fundo);
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 7.199999809265137px rgba(0, 0, 0, 0.25));
+}
+
+.container img{
+    width: 400px;
+    height: 250px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.sobre {
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+.sobre :hover{
+    cursor: pointer;
+}
+
+.pagina_sobre{
+    display: flex;
+    width: 900px;
+    border-radius: 20px;
+    background: #F5F5DC;
+    padding: 15px;
+    border: 4px solid var(--fundo);
+    filter: drop-shadow(0px 4px 7.199999809265137px rgba(0, 0, 0, 0.25));
+}
+
+.pagina_sobre img{
+    width: 400px;
+}
+
+.pagina_sobre p{
+    width: 400px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.pagina_sobre h2{
+    margin-left: 50px;
+}
+
+.logar_curtir{
+    display: none;
+    position: absolute;
+    background-color: #F5F5DC;
+    border-radius: 41px;
+    border: 4px solid var(--fundo);
+    box-shadow: 0px 2px 20.7px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    top: 45%;
+    min-width: 200px;
+}
+
+.pagina_sobre .img_curtir{
+    width: 60px;
+}
+
+textarea{
+    resize: none;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    align-items: center;
+    border-radius: 41px;
+    border: 4px solid var(--fundo);
+    background: #F5F5DC;
+    box-shadow: 0px 2px 20.7px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+}
+
+.data_cadastro{
+    display: flex;
+    align-items: center;
+}
+
+.data_cadastro input{
+    width: 100px;
+    margin: 7px;
+}
+
+.estilo{
+    margin: 10px;
+    margin-right: auto;
+    margin-left: 42px;
+}
+
+#horario{
+    width: 70px;
+}
+
+.lembrar, .novidades, .artista{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 27px;
+}
+
+.lembrar input, .novidades input, .artista input{
+    width: 15px;
+}
+
+input{
+    width: 300px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botao{
+    width: 200px;
+    background-color: var(--fundo);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:24px;
+}
+
+.botao:hover{
+    background-color: rgb(231, 187, 132);
+    cursor: pointer;
+}
+
+.lista-menu_link{
+    border-radius: 0;
+    border: 0;
+}
+
+.artista{
+    margin-left: 42px;
+}
+
+.novidades{
+    align-items: baseline;
+}
+
+.novidades label{
+    width: 260px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--fundo);
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.cadastrado{
+    margin: 40px auto 40px;
+    width: 400px;
+}
+
+.baixo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto_pequeno{
+    display: none;
+}
+
+.celular{
+    display: none;
+}
+
+.horario_data{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.horario_data h3{
+    margin: 0;
+    margin-right: 15px;
+}
+
+.entrar_curtir{
+    color: var(--fundo);
+}
+
+header h2{
+    font-size:30px;
+}
+
+.select-dropdown,
+.select-dropdown * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.select-dropdown {
+  position: relative;
+  background-color: #E6E6E6;
+  border-radius: 4px;
+}
+.select-dropdown select {
+  font-size: 1rem;
+  font-weight: normal;
+  max-width: 100%;
+  padding: 8px 24px 8px 10px;
+  border: none;
+  background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-dropdown:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid #aaa;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+@media screen and (max-width:1070px){
+    .computador{
+        display: none;
+    }
+    .celular{
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .bloco{
+        width: 90%;
+    }
+    .container{
+        width: 45%;
+    }
+    .container img{
+        width: 100%;
+    }
+    .pagina_sobre{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container img{
+        width: 81vw;
+    }
+    .bloco{
+        justify-content: center;
+    }
+    .pagina_sobre img{
+        width: 90%;
+    }
+    .pagina_sobre h2{
+        margin: 0;
+    }
+    .container{
+        width: 90%;
+    }
+    header a{
+        font-size: small;
+    }
+    header nav{
+        min-width: 200px;
+        margin-left: 0%;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        align-items: center;
+    }
+    header nav a{
+        margin: 5px;
+    }
+    header{
+        justify-content: space-between;
+    }
+    header h2{
+        font-size:19.5px;
+    }
+    form{
+        width: 80%;
+    }
+    .novidades label{
+        width: 70%;
+    }
+    input{
+        width: 90%;
+    }
+    .rock{
+        display: none;
+    }
+    #footer{
+        position: static;
+        width: auto;
+    }
+    .formulario{
+        width: 80%;
+    }
+    .lista-menu{
+        margin-left: 50px;
+        right: 0;
+    }
+    .texto_pequeno{
+        display: block;
+    }
+    .texto_grande{
+        display: none;
+    }
+    .pagina_sobre{
+        padding: 15px 0px;
+    }
+    .pagina_sobre p{
+        margin: 10px 25px;
+        width: auto;
+    }
+    
+    #logo{
+        margin: 5px 0px;
+    }
+    .logar_curtir{
+        top: 55%;
+    }
+}
+
+@media screen and (max-height: 710px) {
+    .baixo{
+        position: static;
+        width: auto;
+    }
+}
+
+@media screen and (min-height: 850px) and (max-width: 435px){
+    #footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height:810px){
+    #footer{
+        position: initial;
+        width: unset;
+    }
+}
